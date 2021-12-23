@@ -1,0 +1,11 @@
+<div class="nav-bar"></div>
+
+<div id="app">
+  <div class="cart">
+    <p>Carrinho({{ cart.length }})</p>
+  </div>
+<!--Todos os lugares escutam o que acabou de ser emitido -->  
+  <product :premium="premium" @add-to-cart="updateCart" @remove-from-cart="removeItem"></product>
+</div> 
+
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
